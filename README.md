@@ -188,34 +188,121 @@ Fetch products where quantity is between 10 and 100.
 Product.where(quantity: 10..100)
 ```
 Find products where discount is greater than or equal to 5%.
+```ruby=
+Product.where("discount >= ?", 5)
+```
 Retrieve products where price is less than or equal to 200 and available is true.
+```ruby=
+
+```
 Fetch products where expiry_date is before today’s date.
+```ruby=
+
+```
 Find products where name starts with the letter "A".
+```ruby=
+
+```
 Retrieve products where price is not equal to 100.
+```ruby=
+
+```
 Fetch products where quantity is nil.
+```ruby=
+
+```
 Find products where discount is not nil.
+```ruby=
+
+```
 Update the price of a product where name is "Laptop" to 120.
+```ruby=
+
+```
 Set the available status to false for products where quantity is 0.
+```ruby=
+
+```
 Increase the discount by 5% for products where price is greater than 100.
+```ruby=
+
+```
 Update the description to "Out of stock" for products where available is false.
+```ruby=
+
+```
 Change the expiry_date to December 31, 2024, for products with a discount greater than 10%.
+```ruby=
+
+```
 Update the quantity to 50 for products where name starts with "Pro".
+```ruby=
+
+```
 Set the price to 200 for all products where discount is nil.
+```ruby=
+
+```
 Mark products as available if their released_at is before January 1, 2023.
+```ruby=
+
+```
 Update the price to 80 where the quantity is between 10 and 20.
+```ruby=
+
+```
 Remove any discount (set to nil) for products where expiry_date is before today.
+```ruby=
+
+```
 Update the name to "Premium Laptop" for products where price is more than 500.
+```ruby=
+
+```
 Set the quantity to nil for products where available is false.
+```ruby=
+
+```
 Update released_at to the current date for products with a price less than 50.
+```ruby=
+
+```
 Reduce the price by 20% for products where quantity is less than 5.
+```ruby=
+
+```
 Set the discount to 0% for products with a price greater than or equal to 300.
+```ruby=
+
+```
 Change the description to "Limited time offer" where the discount is 15%.
+```ruby=
+
+```
 Set available to true for products where the price is between 100 and 200.
+```ruby=
+
+```
 Increase the quantity by 10 for products where released_at is after January 1, 2023.
+```ruby=
+
+```
 Set the expiry_date to nil for products where discount is less than 5%.
+```ruby=
+
+```
 Update the price to 150 where the description contains "sale".
+```ruby=
+
+```
 Delete a product where name is "Laptop".
+```ruby=
+
+```
 Remove all products where available is false.
+```ruby=
+
+```
 Delete products where price is greater than 500.
 Remove all products where quantity is 0.
 Delete products where discount is greater than 20%.
