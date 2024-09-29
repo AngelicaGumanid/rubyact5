@@ -156,7 +156,12 @@ Find products where discount is exactly 10%.
 Product.where(discount: 10.0)
 ```
 Retrieve products where name contains the word "Pro".
+```ruby=
+Product.where("name LIKE ?", "%Pro%")
+```
 Fetch products where description includes the word "portable".
+```ruby=
+```
 Find products where price is between 50 and 150.
 Retrieve products where available is false and quantity is greater than 0.
 Fetch products where released_at is after January 1, 2023.
