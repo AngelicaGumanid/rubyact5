@@ -14,6 +14,127 @@ Product.create(name: 'VR Headset', price: 299.99, available: true, quantity: 20,
 Product.create(name: 'Camera', price: 499.99, available: true, quantity: 10, discount: 15, description: 'DSLR camera with lens', released_at: '2021-12-12', expiry_date: nil)
 ```
 Create at least 10 records using the save method
+```ruby=
+# Record 1
+product = Product.new                     
+product.name = 'Gaming Laptop'          
+product.price = 1299.99
+product.available = true
+product.quantity = 15
+product.discount = 8
+product.description = 'High-performance gaming laptop'
+product.released_at = '2023-07-10'
+product.expiry_date = nil
+product.save                               
+
+# Record 2
+product = Product.new
+product.name = 'Noise-Canceling Headphones'
+product.price = 349.99
+product.available = true
+product.quantity = 40
+product.discount = 12
+product.description = 'Over-ear headphones with active noise cancellation'
+product.released_at = '2022-12-01'
+product.expiry_date = nil
+product.save
+
+# Record 3
+product = Product.new
+product.name = '4K Ultra HD TV'
+product.price = 899.99
+product.available = true
+product.quantity = 25
+product.discount = 15
+product.description = '55-inch 4K Ultra HD smart TV'
+product.released_at = '2022-09-20'
+product.expiry_date = nil
+product.save
+
+# Record 4
+product = Product.new
+product.name = 'Digital Camera'
+product.price = 499.99
+product.available = true
+product.quantity = 30
+product.discount = 5
+product.description = 'Compact digital camera with Wi-Fi'
+product.released_at = '2023-01-15'
+product.expiry_date = nil
+product.save
+
+# Record 5
+product = Product.new
+product.name = 'Smart Refrigerator'
+product.price = 1499.99
+product.available = true
+product.quantity = 20
+product.discount = 10
+product.description = 'Smart refrigerator with touchscreen'
+product.released_at = '2023-03-01'
+product.expiry_date = nil
+product.save
+
+# Record 6
+product = Product.new
+product.name = 'Portable Charger'
+product.price = 29.99
+product.available = true
+product.quantity = 100
+product.discount = 0
+product.description = 'Compact portable charger for smartphones'
+product.released_at = '2023-06-10'
+product.expiry_date = nil
+product.save
+
+# Record 7
+product = Product.new
+product.name = 'Fitness Tracker'
+product.price = 99.99
+product.available = true
+product.quantity = 60
+product.discount = 10
+product.description = 'Water-resistant fitness tracker'
+product.released_at = '2023-02-05'
+product.expiry_date = nil
+product.save
+
+# Record 8
+product = Product.new
+product.name = 'Wireless Mouse'
+product.price = 39.99
+product.available = true
+product.quantity = 80
+product.discount = 5
+product.description = 'Ergonomic wireless mouse'
+product.released_at = '2022-10-20'
+product.expiry_date = nil
+product.save
+
+# Record 9
+product = Product.new
+product.name = 'Game Console'
+product.price = 499.99
+product.available = true
+product.quantity = 10
+product.discount = 20
+product.description = 'Latest generation gaming console'
+product.released_at = '2023-04-15'
+product.expiry_date = nil
+product.save
+
+# Record 10
+product = Product.new
+product.name = 'Smart Home Hub'
+product.price = 149.99
+product.available = true
+product.quantity = 50
+product.discount = 15
+product.description = 'Control your smart home devices'
+product.released_at = '2023-05-25'
+product.expiry_date = nil
+product.save
+```
 Fetch all products where name is "Laptop".
 Find products where price is greater than 100.
 Retrieve products where available is true.
