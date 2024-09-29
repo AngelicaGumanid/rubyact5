@@ -172,6 +172,9 @@ Retrieve products where available is false and quantity is greater than 0.
 Product.where(available: false).where("quantity > ?", 0)
 ```
 Fetch products where released_at is after January 1, 2023.
+```ruby=
+Product.where("released_at > ?", Date.new(2023, 1, 1))
+```
 Find products where expiry_date is nil.
 Retrieve products where released_at is before January 1, 2022.
 Fetch products where quantity is between 10 and 100.
