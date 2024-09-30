@@ -221,7 +221,7 @@ Product.where(name: "Laptop").update_all(price: 120)
 ```
 Set the available status to false for products where quantity is 0.
 ```ruby=
-
+Product.where(quantity: 0).update_all(available: false)
 ```
 Increase the discount by 5% for products where price is greater than 100.
 ```ruby=
