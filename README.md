@@ -193,11 +193,11 @@ Product.where("discount >= ?", 5)
 ```
 Retrieve products where price is less than or equal to 200 and available is true.
 ```ruby=
-
+Product.where("price <= ? AND available = ?", 200, true)
 ```
 Fetch products where expiry_date is before today’s date.
 ```ruby=
-
+Product.where("expiry_date < ?", Date.today)
 ```
 Find products where name starts with the letter "A".
 ```ruby=
