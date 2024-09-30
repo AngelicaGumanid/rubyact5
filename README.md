@@ -253,7 +253,7 @@ Product.where(quantity: 10..20).update_all(price: 80)
 ```
 Remove any discount (set to nil) for products where expiry_date is before today.
 ```ruby=
-
+Product.where("expiry_date < ?", Date.today).update_all(discount: nil)
 ```
 Update the name to "Premium Laptop" for products where price is more than 500.
 ```ruby=
