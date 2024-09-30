@@ -245,7 +245,7 @@ Product.where(discount: nil).update_all(price: 200)
 ```
 Mark products as available if their released_at is before January 1, 2023.
 ```ruby=
-
+Product.where("released_at < ?", Date.new(2023, 1, 1)).update_all(available: true)
 ```
 Update the price to 80 where the quantity is between 10 and 20.
 ```ruby=
