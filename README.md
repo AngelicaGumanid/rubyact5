@@ -273,7 +273,7 @@ Reduce the price by 20% for products where quantity is less than 5.
 ```
 Set the discount to 0% for products with a price greater than or equal to 300.
 ```ruby=
-
+Product.where("price >= ?", 300).update_all(discount: 0)
 ```
 Change the description to "Limited time offer" where the discount is 15%.
 ```ruby=
