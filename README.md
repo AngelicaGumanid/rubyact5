@@ -225,7 +225,7 @@ Product.where(quantity: 0).update_all(available: false)
 ```
 Increase the discount by 5% for products where price is greater than 100.
 ```ruby=
-
+Product.where("price > ?", 100).update_all("discount = discount + 5") 
 ```
 Update the description to "Out of stock" for products where available is false.
 ```ruby=
