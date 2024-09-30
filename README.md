@@ -277,7 +277,7 @@ Product.where("price >= ?", 300).update_all(discount: 0)
 ```
 Change the description to "Limited time offer" where the discount is 15%.
 ```ruby=
-
+Product.where(discount: 15).update_all(description: "Limited time offer")
 ```
 Set available to true for products where the price is between 100 and 200.
 ```ruby=
