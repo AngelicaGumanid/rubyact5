@@ -265,7 +265,7 @@ Product.where(available: false).update_all(quantity: nil)
 ```
 Update released_at to the current date for products with a price less than 50.
 ```ruby=
-
+Product.where("price < ?", 50).update_all(released_at: Date.today)
 ```
 Reduce the price by 20% for products where quantity is less than 5.
 ```ruby=
