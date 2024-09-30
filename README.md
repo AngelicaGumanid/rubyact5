@@ -229,7 +229,7 @@ Product.where("price > ?", 100).update_all("discount = discount + 5")
 ```
 Update the description to "Out of stock" for products where available is false.
 ```ruby=
-
+Product.where(available: false).update_all(description: "Out of stock")
 ```
 Change the expiry_date to December 31, 2024, for products with a discount greater than 10%.
 ```ruby=
@@ -304,27 +304,95 @@ Remove all products where available is false.
 
 ```
 Delete products where price is greater than 500.
+```ruby=
+
+```
 Remove all products where quantity is 0.
+```ruby=
+
+```
 Delete products where discount is greater than 20%.
+```ruby=
+
+```
 Remove products where expiry_date is before today’s date.
+```ruby=
+
+```
 Delete all products where name starts with "Pro".
+```ruby=
+
+```
 Remove products where price is less than 50.
+```ruby=
+
+```
 Delete products where released_at is before January 1, 2022.
+```ruby=
+
+```
 Remove products where description contains "discontinued".
+```ruby=
+
+```
 Delete products where quantity is between 1 and 10.
+```ruby=
+
+```
 Remove all products where available is true and price is greater than 300.
+```ruby=
+
+```
 Delete products where discount is nil.
+```ruby=
+
+```
 Remove products where price is exactly 100.
+```ruby=
+
+```
 Delete products where released_at is more than 5 years ago.
+```ruby=
+
+```
 Remove products where description includes "obsolete".
+```ruby=
+
+```
 Delete products where quantity is nil.
+```ruby=
+
+```
 Remove products where expiry_date is within the next month.
+```ruby=
+
+```
 Delete products where discount is less than 5%.
+```ruby=
+
+```
 Remove all products where available is true but quantity is less than 5.
+```ruby=
+
+```
 Print the name of all the products
+```ruby=
+
+```
 Write a new migration to rename the description to content
+```ruby=
+
+```
 Write a new migration to add a new column image
+```ruby=
+
+```
 Write a new migration to remove the column expiry_date
+```ruby=
+
+```
+
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
