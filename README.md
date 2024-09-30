@@ -204,7 +204,7 @@ Find products where name starts with the letter "A".
 Product.where("name LIKE ?", "A%")
 ```
 Retrieve products where price is not equal to 100.
-```ruby=
+```ruby= 
 Product.where.not(price: 100)
 ```
 Fetch products where quantity is nil.
