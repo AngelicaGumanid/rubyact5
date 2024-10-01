@@ -353,7 +353,7 @@ Product.where(price: 100).destroy_all
 ```
 Delete products where released_at is more than 5 years ago.
 ```ruby=
-
+Product.where("released_at < ?", 5.years.ago).destroy_all
 ```
 Remove products where description includes "obsolete".
 ```ruby=
