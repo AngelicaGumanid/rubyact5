@@ -289,7 +289,7 @@ Product.where("released_at > ?", Date.new(2023, 1, 1)).update_all("quantity = qu
 ```
 Set the expiry_date to nil for products where discount is less than 5%.
 ```ruby=
-
+Product.where("discount < ?", 5).update_all(expiry_date: nil)
 ```
 Update the price to 150 where the description contains "sale".
 ```ruby=
