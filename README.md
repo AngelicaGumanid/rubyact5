@@ -325,7 +325,7 @@ Product.where("name LIKE ?", "Pro%").destroy_all
 ```
 Remove products where price is less than 50.
 ```ruby=
-
+Product.where("price < ?", 50).destroy_all
 ```
 Delete products where released_at is before January 1, 2022.
 ```ruby=
