@@ -329,7 +329,7 @@ Product.where("price < ?", 50).destroy_all
 ```
 Delete products where released_at is before January 1, 2022.
 ```ruby=
-
+Product.where("released_at < ?", Date.new(2022, 1, 1)).destroy_all
 ```
 Remove products where description contains "discontinued".
 ```ruby=
