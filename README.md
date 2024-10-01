@@ -285,7 +285,7 @@ Product.where(price: 100..200).update_all(available: true)
 ```
 Increase the quantity by 10 for products where released_at is after January 1, 2023.
 ```ruby=
-
+Product.where("released_at > ?", Date.new(2023, 1, 1)).update_all("quantity = quantity + 10")
 ```
 Set the expiry_date to nil for products where discount is less than 5%.
 ```ruby=
