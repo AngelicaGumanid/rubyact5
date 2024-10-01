@@ -305,7 +305,7 @@ Product.where(available: false).destroy_all
 ```
 Delete products where price is greater than 500.
 ```ruby=
-
+Product.where("price > ?", 500).destroy_all
 ```
 Remove all products where quantity is 0.
 ```ruby=
