@@ -321,7 +321,7 @@ Product.where("expiry_date < ?", Date.today).destroy_all
 ```
 Delete all products where name starts with "Pro".
 ```ruby=
-
+Product.where("name LIKE ?", "Pro%").destroy_all
 ```
 Remove products where price is less than 50.
 ```ruby=
