@@ -313,7 +313,7 @@ Product.where(quantity: 0).destroy_all
 ```
 Delete products where discount is greater than 20%.
 ```ruby=
-
+Product.where("discount > ?", 20).destroy_all
 ```
 Remove products where expiry_date is before today’s date.
 ```ruby=
