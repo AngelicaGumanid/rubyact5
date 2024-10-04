@@ -369,7 +369,7 @@ Product.where("expiry_date BETWEEN ? AND ?", Date.today, 1.month.from_now).destr
 ```
 Delete products where discount is less than 5%.
 ```ruby=
-
+Product.where("discount < ?", 5).destroy_all
 ```
 Remove all products where available is true but quantity is less than 5.
 ```ruby=
