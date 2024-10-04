@@ -381,7 +381,11 @@ Product.pluck(:name).each { |name| puts name }
 ```
 Write a new migration to rename the description to content
 ```ruby=
-
+class RenameDescriptionToContent < ActiveRecord::Migration[6.0]
+  def change
+    rename_column :products, :description, :content
+  end
+end
 ```
 Write a new migration to add a new column image
 ```ruby=
