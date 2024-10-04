@@ -389,6 +389,11 @@ end
 ```
 Write a new migration to add a new column image
 ```ruby=
+class AddImageToProducts < ActiveRecord::Migration[6.0]
+  def change
+    add_column :products, :image, :string
+  end
+end
 
 ```
 Write a new migration to remove the column expiry_date
