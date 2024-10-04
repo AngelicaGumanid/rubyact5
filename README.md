@@ -377,7 +377,7 @@ Remove all products where available is true but quantity is less than 5.
 ```
 Print the name of all the products
 ```ruby=
-
+Product.pluck(:name).each { |name| puts name }
 ```
 Write a new migration to rename the description to content
 ```ruby=
@@ -392,6 +392,7 @@ Write a new migration to remove the column expiry_date
 
 ```
 
+# Validation
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
